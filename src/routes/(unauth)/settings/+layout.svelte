@@ -9,7 +9,6 @@
     $: functionalActive = currentPath.startsWith('/settings/functional');
     $: animationActive  = currentPath.startsWith('/settings/animation');
 
-
 </script>
 
 <div class="settings">
