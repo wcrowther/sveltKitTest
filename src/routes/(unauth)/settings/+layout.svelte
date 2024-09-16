@@ -11,26 +11,12 @@
 
 </script>
 
-<div class="settings">
+<div class="mt-5 px-3 flex justify-end gap-2">
     <Tab href="/settings/display"    active={displayActive}>Display</Tab>
     <Tab href="/settings/functional" active={functionalActive}>Functional</Tab>
     <Tab href="/settings/animation"  active={animationActive}>Animation</Tab>
 </div>
 
-<div class="main">
+<div class="p-5 min-h-[300px]">
     <slot>Settings Optional Content</slot>
 </div>
-
-<style>
-    .main{
-        height: 300px;
-        padding: 10px;
-    }
-    .settings{
-        padding-top: 10px;
-        display:flex;
-        justify-content: end;
-        gap: 5px;
-    }
-
-</style>

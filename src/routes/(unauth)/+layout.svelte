@@ -1,5 +1,6 @@
 <script>
 
+    import "@src/tailwind.css";
     import { page } from '$app/stores';
 
     $: currentPath = $page.url.pathname;
@@ -10,44 +11,25 @@
 
 </script>
 
-<div class="nav">
-    <a href="/"         class:active={homeActive}>Home</a>
-    <a href="/about"    class:active={aboutActive}>About</a>
-    <a href="/settings" class:active={settingsActive}>Settings</a>
+<div class="flex mt-5 p-3 gap-2 bg-[#1e90ff]">
+    <a href="/"         class="nav" class:active={homeActive}>Home</a>
+    <a href="/about"    class="nav" class:active={aboutActive}>About</a>
+    <a href="/settings" class="nav" class:active={settingsActive}>Settings</a>
 </div>
 
-    <slot>Fallback content</slot>
+<slot>Fallback content</slot>
 
-    <div class="footer">
-        Footer
-    </div>
+<div class="p-2 bg-[#1e90ff] text-white font-bold text-center">
+    Footer
+</div>
 
 <style>
+
+    .nav.active{
+        @apply text-[#1e90ff] bg-white 
+    }
     .nav{
-        margin-top: 20px;
-        padding: 10px;
-        display: flex;
-        gap: 5px;
-        background-color: dodgerblue;
-    }
-    .footer{
-        padding: 10px;
-        background-color: dodgerblue;
-        color: white;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    a {
-        padding: 6px 10px; 
-        background-color: hsl(219, 63%, 80%);
-        text-decoration: none;
-        color: black;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    a.active {
-        color: dodgerblue;
-        background-color: white;
+        @apply px-3 py-2 bg-[#acc2ec] no-underline text-black font-bold
     }
 
 </style>

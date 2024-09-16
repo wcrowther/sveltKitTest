@@ -9,9 +9,10 @@
 
 </script>
 
-<div class="index">
+<div class="text-center block mt-5 mb-10 mx-auto">
+
     <h2>{title}</h2>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor at ipsum temporibus possimus, dolore asperiores ea eaque nemo corrupti minus.
+    <p class="p-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor at ipsum temporibus possimus, dolore asperiores ea eaque nemo corrupti minus.
         Doloremque dolorem sequi mollitia aperiam in similique optio. Perspiciatis, accusamus qui deserunt amet nihil optio voluptas repellendus non minima blanditiis?
         Dignissimos facere error sed nam doloribus. Ex, voluptatibus iste, id quae veritatis velit, numquam esse sed dignissimos facere hic. Sint?
         Earum, modi totam, atque cumque minus vel molestias reiciendis aspernatur repellendus sit doloribus sequi sunt exercitationem ex. Perferendis, culpa fuga.
@@ -21,11 +22,3 @@
     <input type="text" bind:value={title}>
 
 </div>
-
-<style>
-    .index {
-        text-align: center;
-        display: block;
-        margin: 20px auto;
-    }
-</style>

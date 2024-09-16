@@ -7,20 +7,15 @@
 <a href={href} class="tab {active ? 'active' : ''}">
   <slot></slot>
 </a>
-  
+
 <style>
+
   .tab {
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    color: white;
-    background-color: dodgerblue;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    @apply py-2 px-3 no-underline text-white bg-[#1e90ff] font-bold
   }
 
   .tab.active {
-    color: dodgerblue;
-    background-color: white;
+    @apply text-black bg-white 
   }
-</style>
-  
+
+</style> 
